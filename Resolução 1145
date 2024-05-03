@@ -1,0 +1,13 @@
+x = int(input("Valor do X: "))
+y = int(input("Valor de Y: "))
+
+quebra_linha = 0
+
+for i in range(1, y + 1):
+    print(i, end=" ")
+
+    quebra_linha += 1
+
+    if quebra_linha == x or i == y:
+        print() 
+        quebra_linha = 0 
